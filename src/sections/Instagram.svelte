@@ -68,12 +68,5 @@ Para asegurarnos de que todos los recuerdos de esta noche tan especial se manten
 " 
         buttonStyleClass="button-none"
         />
-    <div class="card">
-        <h3>Cómo participar:</h3>
-        <p>1. Toma fotos y videos durante la fiesta.</p>
-        <p>2. Publica en Instagram usando el hashtag [#HashtagDelEvento].</p>
-        <p>3. Explora el álbum: Todas las publicaciones con este hashtag se mostrarán automáticamente aquí, en nuestro muro de recuerdos, para que todos podamos revivir estos momentos mágicos juntos.</p>
-        <p>*Recordá asegúrarte de que tu cuenta de Instagram esté pública o que aceptes nuestra solicitud de seguimiento para que podamos ver y compartir tus fotos.</p>
-    </div>
     <Button text={"ver feed"} styleClass={"button-default"} />
 </div>
