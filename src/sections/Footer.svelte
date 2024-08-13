@@ -19,8 +19,8 @@
     .img {
         max-width: max-content;
     }
-    .morena {
-        height: 10rem;
+    .textFooter {
+        height: 7rem;
         margin: 0.5rem 0;
     }
     .text {
@@ -32,12 +32,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-    p {
-        text-transform: uppercase;
-        font-size: 1rem;
-        padding: 1rem;
-        font-weight: 600;
     }
 
     @media (min-width: 650px) {
@@ -55,8 +49,8 @@
             height: min-content;
         }
         
-        .morena {
-            height: 11rem;
+        .textFooter {
+            height: 10rem;
             margin: 0.6rem 0;
         }
     }
@@ -67,8 +61,8 @@
         .img {
             top: -8rem;
         }
-        .morena {
-            height: 14rem;
+        .textFooter {
+            height: 12rem;
             margin: 0.9rem 0;
         }
     }
@@ -82,6 +76,6 @@
     <div class="img">   
     </div>
     <div class="text">
-        <img src={ textFooter } alt="" class="morena">
+        <img src={ textFooter } alt="" class="textFooter">
     </div>
 </div>
