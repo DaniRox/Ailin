@@ -6,7 +6,7 @@
 <style>
     .Presentacion {
         width: 100%;
-        padding: 4rem 10%;
+        padding: 4rem 10% 2rem;
     }
     p {
         color: var(--oldRose);
@@ -17,18 +17,18 @@
     }
     @media (min-width: 768px) {
         .Presentacion {
-            padding: 5rem 20%;
+            padding: 5rem 20% 2.5rem;
         }
     }
     @media (min-width: 1024px) {
         .Presentacion {
-            padding: 6rem 25%;
+            padding: 6rem 25% 3rem;
         }
     }
 </style>
 
 
 <div class="Presentacion">
-    <p>Acompañános a celebrar este día tan especial lleno de magia.
+    <p>Acompañame a celebrar este día tan especial lleno de magia.
         Tu presencia será un regalo inestimable.</p>
 </div>

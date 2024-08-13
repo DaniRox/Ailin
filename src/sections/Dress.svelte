@@ -36,9 +36,9 @@
 <div class="Dress">
     <img src={imgTitle} alt="Titulo DressCode">
     <Text 
-        text="Para esta noche tan especial, queremos que todos nuestros invitados se sientan parte de la magia. Les pedimos asistir con vestimenta elegantes.
+        text="Para esta noche tan especial, quiero que todos los invitados se sientan parte de la magia. Te pido asistir con vestimenta elegantes.
 
-¡Esperamos verlos radiantes y listos para disfrutar de una noche inolvidable!" 
+¡Espero verlos radiantes y listos para disfrutar de una noche inolvidable!" 
         buttonStyleClass="button-none"
         />
 </div>

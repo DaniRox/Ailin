@@ -24,10 +24,10 @@
 
 <div class="Confirmar">
     <Text 
-        text="Tu presencia es muy importante para nosotros. Por favor, confirma tu asistencia llenando el siguiente formulario. ¡Estamos ansiosos de celebrar con vos!" 
+        text="Tu presencia es muy importante para mi. Por favor, confirma tu asistencia llenando el siguiente formulario. ¡Estoy ansiosa de celebrar con vos!" 
         buttonText="confirmar asitencia"
         buttonStyleClass="button-default"
-        buttonUrl="https://forms.gle/KigCQ2QUoWHgZPr3A"
+        buttonUrl="https://forms.gle/71MYj9AoAZcz8cbt9"
         buttonNewTab={true} 
         />
 </div>

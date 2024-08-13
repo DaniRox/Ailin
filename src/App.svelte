@@ -7,6 +7,7 @@
 	import Instagram from "./sections/Instagram.svelte";
 	import Presentacion from "./sections/Presentacion.svelte";
 	import Hero from "./sections/Hero.svelte";
+	import Contador from "./sections/Contador.svelte";
 </script>
 
 
@@ -16,16 +17,13 @@
 		background-color: var(--seasalt);
 	}
 
-	h1 {
-		font-family: "Mollafest";
-		font-size: 3rem;
-	}
 </style>
 
 
 <main>
 	<Hero />
 	<Presentacion />
+	<Contador />
 	<Map />
 	<ConfirmarAsistencia />
 	<Agendar />

@@ -21,9 +21,6 @@
         img {
             margin-bottom: 0.7rem;
         }
-        .card {
-            width: 60%;
-        }
         .Mensaje {
             padding: 5rem 20%;
         }
@@ -39,10 +36,10 @@
 <div class="Mensaje">
     <img src={imgTitle} alt="Titulo Deja un Mensaje">
     <Text 
-        text="Comparte tus buenos deseos y mensajes especiales para [Nombre de la cumpleañera]. Ella estará encantada de leerlos y guardarlos como un precioso recuerdo." 
+        text="Compartí tus buenos deseos y mensajes especiales para mi. Estaré encantada de leerlos y guardarlos como un precioso recuerdo." 
         buttonText="enviar mensaje"
         buttonStyleClass="button-default"
-        buttonUrl=""
+        buttonUrl="https://forms.gle/37V2FYBQfcm19dtt5"
         buttonNewTab={true} 
     />
 </div>
