@@ -8,6 +8,7 @@
 	import Presentacion from "./sections/Presentacion.svelte";
 	import Hero from "./sections/Hero.svelte";
 	import Contador from "./sections/Contador.svelte";
+	import Footer from "./sections/Footer.svelte";
 </script>
 
 
@@ -30,4 +31,5 @@
 	<Dress />
 	<Mensaje />
 	<Instagram />
+	<Footer />
 </main>
