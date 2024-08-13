@@ -1,6 +1,7 @@
 <script>
 	import Text from './../components/Text.svelte';
     import imgTitle from "../images/titleDress.png";
+    import imgIcon from "../images/dress.png";
 </script>
 
 
@@ -16,6 +17,9 @@
     img {
         height: 4.4rem;
         margin-bottom: 0.5rem;
+    }
+    .dressIcon {
+        height: 7rem;
     }
     @media (min-width: 768px) {
         img {
@@ -41,4 +45,5 @@
 ¡Espero verlos radiantes y listos para disfrutar de una noche inolvidable!" 
         buttonStyleClass="button-none"
         />
+    <img src={imgIcon} alt="icono" class="dressIcon">
 </div>
