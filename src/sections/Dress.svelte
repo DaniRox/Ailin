@@ -19,7 +19,7 @@
         margin-bottom: 0.5rem;
     }
     .dressIcon {
-        height: 7rem;
+        height: 16rem;
     }
     @media (min-width: 768px) {
         img {
@@ -33,6 +33,9 @@
         .Dress {
             padding: 6rem 25%;
         }
+        .dressIcon {
+            height: 20rem;
+        }
     }
 </style>
 
@@ -40,9 +43,7 @@
 <div class="Dress">
     <img src={imgTitle} alt="Titulo DressCode">
     <Text 
-        text="Para esta noche tan especial, quiero que todos los invitados se sientan parte de la magia. Te pido asistir con vestimenta elegantes.
-
-¡Espero verlos radiantes y listos para disfrutar de una noche inolvidable!" 
+        text="Elegante" 
         buttonStyleClass="button-none"
         />
     <img src={imgIcon} alt="icono" class="dressIcon">
