@@ -19,7 +19,7 @@
         margin-bottom: 0.5rem;
     }
     .dressIcon {
-        height: 16rem;
+        height: 20rem;
     }
     @media (min-width: 768px) {
         img {
@@ -34,7 +34,7 @@
             padding: 6rem 25%;
         }
         .dressIcon {
-            height: 20rem;
+            height: 24rem;
         }
     }
 </style>
