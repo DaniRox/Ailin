@@ -2,6 +2,11 @@
 	import Text from './../components/Text.svelte';
     import imgTitle from "../images/titleInstagram.png";
     import Button from '../components/Button.svelte';
+
+    export let buttonText = "ir a instagram";
+    export let buttonUrl = "https://www.instagram.com/morexv.eventus.2024?igsh=MTZ0ZnFmbzFtZDR4NQ==";
+    export let buttonNewTab = true;
+    export let buttonStyleClass = "button-default";
 </script>
 
 
@@ -60,13 +65,18 @@
 
 <div class="Instagram">    
     <img src={imgTitle} alt="Titulo: Instagram">
-    <Text 
-        text="¡Seguinos en Instagram para no perderte ningún detalle de la fiesta en tiempo real!
-¡Comparti tus momentos mágicos!
-
-Para asegurarnos de que todos los recuerdos de esta noche tan especial se mantengan juntos, creamos un hashtag único: [#HashtagDelEvento]. 
-" 
+    <Text
+        text="¡Unite a la Fiesta en Instagram!" 
         buttonStyleClass="button-none"
         />
-    <Button text={"ver feed"} styleClass={"button-default"} />
+    <Text text="Para que la celebración sea aún más especial, creamos un perfil en Instagram dedicado al gran evento.
+        " buttonStyleClass="button-none"/>
+    <div class="card">
+        <p>Seguínos en @MoreXV.eventus.2024 para:</p>
+        <p>Conocer los Detalles: Mantenete al tanto de toda la información importante y actualizaciones sobre la fiesta.</p>
+        <p>Interacción Previa: Participá en encuestas, juegos y actividades emocionantes antes del gran día.</p>
+        <p>Fotos del Evento: Reviví los momentos más destacados y descubrí las fotos de la fiesta después del evento.</p>
+        <p>¡No te lo pierdas! Conéctate con nosotros en Instagram y prepárate para disfrutar de una experiencia inolvidable." </p>
+    </div>
+    <Button text={buttonText} styleClass={buttonStyleClass} url={buttonUrl} newTab={buttonNewTab}/>
 </div>

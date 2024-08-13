@@ -29,6 +29,6 @@
 
 
 <div class="Presentacion">
-    <p>Acompañame a celebrar este día tan especial lleno de magia.
+    <p>Acompañame a celebrar este día tan especial lleno de felicidad.
         Tu presencia será un regalo inestimable.</p>
 </div>

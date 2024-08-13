@@ -14,6 +14,7 @@
         border-radius: 0.3rem;
         text-transform: uppercase;
         transition: all 0.3s;
+        margin-top: 1.6rem;
     }
 
     .button-default {
