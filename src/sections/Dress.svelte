@@ -15,7 +15,7 @@
         align-items: center;
     }
     img {
-        height: 7rem;
+        height: 4.5rem;
         margin-bottom: 0.5rem;
     }
     .dressIcon {
