@@ -19,7 +19,7 @@
         margin-bottom: 0.5rem;
     }
     .dressIcon {
-        height: 5rem;
+        height: 7rem;
     }
     @media (min-width: 768px) {
         img {
