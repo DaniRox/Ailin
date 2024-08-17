@@ -15,7 +15,7 @@
         align-items: center;
     }
     img {
-        height: 4.4rem;
+        height: 7rem;
         margin-bottom: 0.5rem;
     }
     .dressIcon {
@@ -34,7 +34,7 @@
             padding: 6rem 25%;
         }
         .dressIcon {
-            height: 24rem;
+            height: 9rem;
         }
     }
 </style>
