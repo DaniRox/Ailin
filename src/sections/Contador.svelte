@@ -6,7 +6,7 @@ let horas = 0;
 let minutos = 0;
 
 // Fecha del evento
-const eventDate = new Date('2024-11-02T21:00:00');
+const eventDate = new Date('2026-11-02T21:00:00');
 
 // Función para calcular el tiempo restante
 function calcularTiempoRestante() {
