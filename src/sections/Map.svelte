@@ -45,7 +45,7 @@
         text="La fiesta será el dia 2 de Noviembre. Te espero a las 21:00 hs en “Sutna Pilar”, salón ubicado en Saravi 1800, La Lonja, Pilar." 
         buttonText="ver mapa"
         buttonStyleClass="button-default"
-        buttonUrl="https://maps.app.goo.gl/3yfYk8B1NTUuHU2c8"
+        buttonUrl="https://maps.app.goo.gl/XVusdM3dQXBtDQLa9"
         buttonNewTab={true} 
     />
 </div>

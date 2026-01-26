@@ -39,7 +39,7 @@
         text="Compartí tus buenos deseos y mensajes especiales para mi. Estaré encantada de leerlos y guardarlos como un precioso recuerdo." 
         buttonText="enviar mensaje"
         buttonStyleClass="button-default"
-        buttonUrl="https://forms.gle/37V2FYBQfcm19dtt5"
+        buttonUrl="https://forms.gle/zsZz7UbrZUUu3LHJ9"
         buttonNewTab={true} 
     />
 </div>

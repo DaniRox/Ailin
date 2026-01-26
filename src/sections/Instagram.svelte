@@ -4,7 +4,7 @@
     import Button from '../components/Button.svelte';
 
     export let buttonText = "ir a instagram";
-    export let buttonUrl = "https://www.instagram.com/morexv.eventus.2024?igsh=MTZ0ZnFmbzFtZDR4NQ==";
+    export let buttonUrl = "https://www.instagram.com/eventus.invitacionesdigitales/";
     export let buttonNewTab = true;
     export let buttonStyleClass = "button-default";
 </script>

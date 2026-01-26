@@ -27,7 +27,7 @@
         text="Tu presencia es muy importante para mi. Por favor, confirma tu asistencia llenando el siguiente formulario. ¡Estoy ansiosa de celebrar con vos!" 
         buttonText="confirmar asitencia"
         buttonStyleClass="button-default"
-        buttonUrl="https://forms.gle/LjnvsKy1PiRbNTBo8"
+        buttonUrl="https://forms.gle/rCGpaQ4s4z6vMyRi9"
         buttonNewTab={true} 
         />
 </div>
