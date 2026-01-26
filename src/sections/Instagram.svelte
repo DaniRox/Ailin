@@ -72,7 +72,7 @@
     <Text text="Para que la celebración sea aún más especial, creamos un perfil en Instagram dedicado al gran evento.
         " buttonStyleClass="button-none"/>
     <div class="card">
-        <p>Seguínos en @MoreXV.eventus.2024 para:</p>
+        <p>Seguínos en @ para:</p>
         <p>Conocer los Detalles: Mantenete al tanto de toda la información importante y actualizaciones sobre la fiesta.</p>
         <p>Interacción Previa: Participá en encuestas, juegos y actividades emocionantes antes del gran día.</p>
         <p>Fotos del Evento: Reviví los momentos más destacados y descubrí las fotos de la fiesta después del evento.</p>
