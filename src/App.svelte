@@ -1,13 +1,11 @@
 <script>
-	import Map from "./sections/Map.svelte";
-	import ConfirmarAsistencia from "./sections/ConfirmarAsistencia.svelte";
-	import Agendar from "./sections/Agendar.svelte";
-	import Dress from "./sections/Dress.svelte";
-	import Mensaje from "./sections/Mensaje.svelte";
-	import Instagram from "./sections/Instagram.svelte";
-	import Presentacion from "./sections/Presentacion.svelte";
 	import Hero from "./sections/Hero.svelte";
 	import Contador from "./sections/Contador.svelte";
+	import Map from "./sections/Map.svelte";
+	import Agendar from "./sections/Agendar.svelte";
+	import Mensaje from "./sections/Mensaje.svelte";
+	import Instagram from "./sections/Instagram.svelte";
+	import Regalos from "./sections/Regalos.svelte";
 	import Footer from "./sections/Footer.svelte";
 </script>
 
@@ -15,7 +13,8 @@
 <style>
 	
 	main {
-		background-color: var(--seasalt);
+		background-color: var(--seasShell);
+		overflow: hidden;
 	}
 
 </style>
@@ -23,13 +22,11 @@
 
 <main>
 	<Hero />
-	<Presentacion />
 	<Contador />
 	<Map />
-	<ConfirmarAsistencia />
 	<Agendar />
-	<Dress />
 	<Mensaje />
 	<Instagram />
+	<Regalos />
 	<Footer />
 </main>

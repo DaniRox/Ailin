@@ -1,12 +1,13 @@
 <script>
     import { onMount } from 'svelte';
+    import tagContador from "../images/tag_contador.png";
 
-let dias = 0;
-let horas = 0;
-let minutos = 0;
+    let dias = 0;
+    let horas = 0;
+    let minutos = 0;
 
 // Fecha del evento
-const eventDate = new Date('2026-11-02T21:00:00');
+const eventDate = new Date('2026-03-14T21:00:00');
 
 // Función para calcular el tiempo restante
 function calcularTiempoRestante() {
@@ -37,36 +38,50 @@ onMount(() => {
 
 <style>
     .Contador {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
-        padding: 4rem 10%;
+        padding: 7rem 10%;
+        background-color: var(--almondCream);
+        box-shadow: 5px 0px 45px 0px rgb(152, 139, 121, 0.8) inset;
     }
-    .title {
-        color: var(--smokyBlack);
+    .text {
+        color: var(--onyx);
+        align-self: center;
+        max-width: 30rem;
         text-align: center;
-        font-size: 1.3rem;
-        font-weight: 400;
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-bottom: 3rem;
+    }
+    .text2 {
         margin-bottom: 3rem;
     }
     .container {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 2rem;
+        align-items: center;
+        gap: 1rem;
+    }
+    .tag {
+        width: 23rem;
+        position: absolute;
+        z-index: 1;
+        padding-left: 2rem;
+        padding-bottom: 1.5rem;
     }
     .card-contador{
-        color: var(--smokyBlack);
-        width: 8rem;
-        height: 8rem;
-        background-color: var(--mistyRose);
+        width: 3rem;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        border-radius: 0.6rem;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         font-weight: 500;
-        gap: 1.2rem;
-        box-shadow: 0px 2px 7px 2px rgba(36,30,16,0.40);
+        gap: 1rem;
+        z-index: 2;
     }
     .card-text {
         color: var(--smokyBlack);
@@ -74,34 +89,56 @@ onMount(() => {
         font-weight: 500;
         text-transform: uppercase;
     }
+    @media (min-width: 430px) {
+        .Contador {
+            padding: 8rem 20%;
+        }
+    }
     @media (min-width: 768px) {
         .Contador {
-            padding: 5rem 20%;
+            padding: 10rem 20%;
         }
-        .container {
-            gap: 2.5rem;
+        .tag {
+            width: 26rem;
+            padding-left: 2rem;
+            padding-bottom: 2rem;
+        }
+        .text {
+            font-size: 1.2rem;
+        }
+        .card-contador{
+            width: 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 3.5rem;
+            font-weight: 500;
+            gap: 1rem;
+            z-index: 2;
+        }
+        .card-text {
+            font-size: 1.1rem;
         }
     }
     @media (min-width: 1024px) {
         .Contador {
-            padding: 6rem 25%;
-        }
-        .card-contador{
-            width: 8rem;
-            height: 10rem;
-        }
-        .container {
-            gap: 3rem;
+            padding: 8rem 25%;
         }
     }
 </style>
 
 
 <div class="Contador">
-    <p class="title">Faltan...</p>
+    <p class="text">Los momentos pasan,
+        pero los recuerdos de este día
+        quedarán grabados para siempre
+        en el tiempo.</p>
+    <p class="text text2">Faltan...</p>
     <div class="container">
+        <img src={ tagContador } alt="" class="tag">  
         <div class="dias card-contador">{dias}<p class="card-text">dias</p></div>
         <div class="minutos card-contador">{horas}<p class="card-text">horas</p></div>
-        <div class="segundos card-contador">{minutos}<p class="card-text">minutos</p></div>
+        <div class="segundos card-contador">{minutos}<p class="card-text">mins</p></div>
     </div>
 </div>

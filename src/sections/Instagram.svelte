@@ -1,7 +1,8 @@
 <script>
 	import Text from './../components/Text.svelte';
-    import imgTitle from "../images/titleInstagram.png";
+    import imgInsta from "../images/instagram.png";
     import Button from '../components/Button.svelte';
+    import tagInsta from "../images/tag-insta.png";
 
     export let buttonText = "ir a instagram";
     export let buttonUrl = "https://www.instagram.com/eventus.invitacionesdigitales/";
@@ -13,13 +14,14 @@
 <style>
     .Instagram {
         width: 100%;
-        padding: 4rem 10%;
+        padding: 7rem 10%;
+        color: var(--onyx);
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     img {
-        height: 4.4rem;
+        height: 2rem;
         margin-bottom: 0.5rem;
     }
     .card {
@@ -32,17 +34,51 @@
         display: flex;
         flex-direction: column;
     }
-    h3 {
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1.4rem;
-        padding-bottom: 0.8rem;
-    }
     p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         font-weight: 400;
         line-height: 1.2rem;
         padding-bottom: 0.8rem;
+        z-index: 8;
+    }
+    .tag-insta {
+        width: 12.5rem;
+        height: auto;
+        padding: 5rem 0 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .insta {
+        width: 17rem;
+        height: auto;
+        position: absolute;
+        z-index: 5;
+    }
+    @media (min-width: 430px) {
+        p {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.2rem;
+            padding-bottom: 0.8rem;
+            z-index: 8;
+        }
+        .tag-insta {
+            width: 14rem;
+            height: auto;
+            padding: 5rem 0 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .insta {
+            width: 19rem;
+            height: auto;
+            position: absolute;
+            z-index: 5;
+        }
     }
     @media (min-width: 768px) {
         img {
@@ -54,6 +90,21 @@
         .card {
             width: 60%;
         }
+        .tag-insta {
+            width: 14rem;
+            height: auto;
+            padding: 5rem 0 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .insta {
+            width: 19rem;
+            height: auto;
+            position: absolute;
+            z-index: 5;
+        }
     }
     @media (min-width: 1024px) {
         .Instagram {
@@ -64,19 +115,24 @@
 
 
 <div class="Instagram">    
-    <img src={imgTitle} alt="Titulo: Instagram">
+    <img src={imgInsta} alt="Logo Instagram">
     <Text
-        text="¡Unite a la Fiesta en Instagram!" 
         buttonStyleClass="button-none"
-        />
-    <Text text="Para que la celebración sea aún más especial, creamos un perfil en Instagram dedicado al gran evento.
-        " buttonStyleClass="button-none"/>
-    <div class="card">
-        <p>Seguínos en @ para:</p>
-        <p>Conocer los Detalles: Mantenete al tanto de toda la información importante y actualizaciones sobre la fiesta.</p>
-        <p>Interacción Previa: Participá en encuestas, juegos y actividades emocionantes antes del gran día.</p>
-        <p>Fotos del Evento: Reviví los momentos más destacados y descubrí las fotos de la fiesta después del evento.</p>
-        <p>¡No te lo pierdas! Conéctate con nosotros en Instagram y prepárate para disfrutar de una experiencia inolvidable." </p>
+    >
+    ¡La emoción comienza antes de la fiesta!
+    <br>
+    Seguí la cuenta oficial de los XV de Ailín y participá de encuestas, juegos y anticipos exclusivos. 
+    <br>
+    No te quedes afuera de la diversión previa.
+    </Text>
+
+    <div class="tag-insta">
+        <img src={ tagInsta } alt="" class="insta">
+        <p>Cómo participar:</p>
+        <p>1. Seguí la cuenta y activa las notificaciones para estar al día con las novedades.</p>
+        <p>2. Respondé a las historias y jugá a las encuestas para interactuar con la festejada.</p>
+        <p>3. El día del evento, compartí tus fotos y videos usando el hashtag #HashtagDelEvento.</p>
     </div>
+
     <Button text={buttonText} styleClass={buttonStyleClass} url={buttonUrl} newTab={buttonNewTab}/>
 </div>

@@ -1,88 +1,86 @@
 <script>
-    import imgBackground from "../images/fondo-hero-s.jpg";
-    import morena from "../images/morena.png";
+    import imgBackground from "../images/fondo_rallas.jpg";
+    import tagAilin from "../images/tag_ailin.png";
 </script>
 
 
 <style>
     .Hero {
-        height: 41rem;
+        height: 35rem;
+        overflow: hidden;
+    }
+    .shadow {
+        width: 100%;
+        height: 100%;
         position: relative;
+        background-color: transparent;
+        box-shadow: 2px 0px 31px 0px rgba(12,17,12,0.51) inset;
+        z-index: 15;
     }
     .div-img {
         overflow: hidden;
-        display: flex;
         justify-content: center;
-        height: 100%;
+        z-index: 1;
     }
-    .img {
-        max-width: max-content;
+    .background {
+        max-width: 100rem;
     }
-    .morena {
-        height: 10rem;
-        margin: 0.5rem 0;
+    .tag {
+        height: 17rem;
+        margin-top: -3rem;
+        z-index: 10;
     }
     .text {
         width: 100%;
         height: 100%;
-        top: 0;
+        top: -1rem;
         position: absolute;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    p {
-        text-transform: uppercase;
-        font-size: 1rem;
-        padding: 1rem;
-        font-weight: 600;
-    }
 
-    @media (min-width: 650px) {
+    @media (min-width: 430px) {
         .Hero {
-            overflow: hidden;
+            height: 42rem;
         }
         .div-img {
             overflow: hidden;
             position: relative;
         }
-        .img {
-            width: 100%;
-            max-width: none;
-            position: inherit;
-            height: min-content;
+        .tag {
+            height: 26rem;
         }
-        
-        .morena {
-            height: 11rem;
-            margin: 0.6rem 0;
+
+    }
+    @media (min-width: 768px) {
+        .Hero {
+            height: 40rem;
+        }
+        .tag {
+            height: 30rem;
         }
     }
     @media (min-width: 1024px) {
         .Hero {
-            height: 33rem;
+            height: 42rem;
         }
-        .img {
-            top: -8rem;
-        }
-        .morena {
-            height: 14rem;
-            margin: 0.9rem 0;
+        .tag {
+            height: 35rem;
         }
     }
 </style>
 
 
 <div class="Hero">
-    <div class="div-img">
-        <img src={ imgBackground } alt="" class="img">  
-    </div>
-    <div class="img">   
-    </div>
-    <div class="text">
-        <p>mis 15 años</p>
-        <img src={ morena } alt="" class="morena">
-        <p>02.11.24</p>
+    <div class="shadow">
+        <div class="div-img">
+            <img src={ imgBackground } alt="" class="background">  
+        </div>
+
+        <div class="text">
+            <img src={ tagAilin } alt="" class="tag">
+        </div>
     </div>
 </div>

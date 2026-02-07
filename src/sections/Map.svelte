@@ -1,20 +1,26 @@
 <script>
 	import Text from './../components/Text.svelte';
-    import imgTitle from "../images/titleCena.png";
+    import imgTitle from "../images/Cena_Fiesta.png";
+    import rosas from "../images/rosas2.png";
 </script>
 
 
 <style>
-    img {
-        height: 4.4rem;
-        margin-bottom: 0.5rem;
+    .title {
+        height: 4.5rem;
+        margin-bottom: -3.5rem;
+        align-self: center;
     }
     .Ubicacion {
         width: 100%;
-        padding: 4rem 10%;
+        background-color: var(--seasShell);
+        box-shadow: 5px 0px 45px 0px rgb(152, 139, 121, 0.8) inset;
+        padding: 7rem 10% 0rem;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        align-self: center;
+        gap: 4rem;
     }
     iframe {
         width: 100%;
@@ -22,30 +28,96 @@
         margin: 2rem;
         border-radius: 1rem;
     }
-    @media (min-width: 768px) {
-        img {
+    .text {
+        color: var(--onyx);
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 3rem;
+        line-height: 1.4rem;
+        align-self: center;
+    }
+    .rosas {
+        max-width: none;
+        width: 45rem;    
+        margin-left: -5rem;
+        height: auto;
+        left: 0;
+        position: relative;
+        margin-top: -8rem;
+        bottom: -5rem;
+        z-index: 20;
+    }
+
+    @media (min-width: 430px) {
+        .title {
             margin-bottom: 0.7rem;
         }
         .Ubicacion {
-            padding: 5rem 20%;
+            padding: 8rem 20% 0;
+        }
+        .rosas {
+            width: 50rem;
+            margin-left: -9rem;   
+        }
+
+    }
+    @media (min-width: 768px) {
+        .title {
+            margin-bottom: 0.7rem;
+        }
+        .Ubicacion {
+            padding: 10rem 20% 0;
+        }
+        .rosas {
+            width: 60rem;
+            align-self: center;
+            margin-left: 0rem; 
         }
     }
     @media (min-width: 1024px) {
         .Ubicacion {
-            padding: 6rem 25%;
+            padding: 8rem 25% 0;
+        }
+        .rosas {
+            width: 65rem;
+            align-self: center;
+            margin-left: 0rem; 
         }
     }
 </style>
 
 
 <div class="Ubicacion">
-    <img src={imgTitle} alt="Titulo Cena y Fiesta">
+    <img src={imgTitle} alt="Titulo Cena y Fiesta" class="title">
 
     <Text 
-        text="La fiesta será el dia 2 de Noviembre. Te espero a las 21:00 hs en “--”, salón ubicado en ..." 
         buttonText="ver mapa"
         buttonStyleClass="button-default"
-        buttonUrl="https://maps.app.goo.gl/XVusdM3dQXBtDQLa9"
+        buttonUrl="https://maps.app.goo.gl/wmfqFpVKNurW99mE9"
         buttonNewTab={true} 
-    />
+    >
+    El escenario elegido para esta noche memorable...
+    <br><br>
+        Av. Presidente Illia 10248, Tortuguitas. 
+        Inicio: 21:00 hs | Fin: 05:00 hs
+    <br><br>
+        ¡La fiesta arranca en punto y no queremos que te pierdas el comienzo!
+    </Text>
+
+    <Text 
+        buttonText="confirmar ahora"
+        buttonStyleClass="button-default"
+        buttonUrl="https://forms.gle/u136ajgCFZXTq73h8"
+        buttonNewTab={true} 
+    >
+    ¡Con vos la fiesta es completa!
+    <br>
+    Avisanos si nos acompañás. Tu confirmación es vital para recibirte como te mereces.
+    <br>
+    ¡Estamos ansiosos por celebrar junto a vos!
+    
+</Text>
+
+    <img src={rosas} alt="Rosas Rococo" class="rosas">
 </div>
