@@ -6,7 +6,7 @@
 
 <style>
     .Hero {
-        height: 37rem;
+        height: 90vh;
         overflow: hidden;
     }
     .shadow {
@@ -43,7 +43,7 @@
 
     @media (min-width: 430px) {
         .Hero {
-            height: 40rem;
+            height: 90vh;
         }
         .div-img {
             overflow: hidden;
@@ -56,7 +56,7 @@
     }
     @media (min-width: 768px) {
         .Hero {
-            height: 44rem;
+            height: 90vh;
         }
         .tag {
             height: 30rem;
@@ -64,7 +64,7 @@
     }
     @media (min-width: 1024px) {
         .Hero {
-            height: 42rem;
+            height: 90vh;
         }
         .tag {
             height: 35rem;
