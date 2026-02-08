@@ -43,7 +43,7 @@
 
     @media (min-width: 430px) {
         .Hero {
-            height: 48rem;
+            height: 40rem;
         }
         .div-img {
             overflow: hidden;
@@ -56,7 +56,7 @@
     }
     @media (min-width: 768px) {
         .Hero {
-            height: 40rem;
+            height: 44rem;
         }
         .tag {
             height: 30rem;
