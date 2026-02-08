@@ -27,7 +27,6 @@
         left: 0;
         width: 100%;
         height: 100%;
-        padding: 2rem 0;
         background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
         display: flex;
         justify-content: center;
@@ -40,10 +39,13 @@
         padding: 2rem;
         border-radius: 10px;
         max-width: 90%;
-        width: 400px;
+        width: 25rem;
         position: relative;
         box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         color: var(--onyx);
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
     }
 
     .close-button {

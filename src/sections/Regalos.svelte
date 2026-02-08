@@ -33,14 +33,14 @@
     .title{
         color: var(--onyx);
         text-align: center;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         font-weight: 700;
     }
     .text {
         color: var(--onyx);
         text-align: center;
-        font-size: 1.1rem;
-        font-weight: 500;
+        font-size: 1.6rem;
+        font-weight: 600;
     }
     .text2 {
         margin-bottom: 3rem;
@@ -139,10 +139,10 @@
             font-size: 1.2rem;
         }
         .text {
-            font-size: 1.2rem;
+            font-size: 1.8rem;
         }
         .title{
-            font-size: 1.8rem;
+            font-size: 2rem;
         }
         .card-Regalos{
             width: 4rem;
