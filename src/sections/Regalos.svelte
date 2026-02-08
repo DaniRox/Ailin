@@ -33,7 +33,7 @@
     .title{
         color: var(--onyx);
         text-align: center;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         font-weight: 700;
     }
     .text {
@@ -48,7 +48,7 @@
     .text-modal {
         color: var(--onyx);
         text-align: center;
-        font-size: 0.8rem;
+        font-size: 1rem;
         font-weight: 300;
         text-transform: uppercase;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -136,13 +136,13 @@
             padding-bottom: 2rem;
         }
         .text-modal {
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
         .text {
             font-size: 1.2rem;
         }
         .title{
-            font-size: 1.6rem;
+            font-size: 1.8rem;
         }
         .card-Regalos{
             width: 4rem;
