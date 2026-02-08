@@ -5,7 +5,7 @@
     import tagInsta from "../images/tag-insta.png";
 
     export let buttonText = "ir a instagram";
-    export let buttonUrl = "https://www.instagram.com/eventus.invitacionesdigitales/";
+    export let buttonUrl = "https://www.instagram.com/xv.ailin?igsh=NWJuZnZ4YjgzMWZj";
     export let buttonNewTab = true;
     export let buttonStyleClass = "button-default";
 </script>
