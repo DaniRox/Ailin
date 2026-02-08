@@ -42,7 +42,7 @@ onMount(() => {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        padding: 7rem 10%;
+        padding: 7rem 10% 9rem;
         background-color: var(--almondCream);
         box-shadow: 5px 0px 45px 0px rgb(152, 139, 121, 0.8) inset;
     }
@@ -51,7 +51,7 @@ onMount(() => {
         align-self: center;
         max-width: 30rem;
         text-align: center;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         font-weight: 500;
         margin-bottom: 3rem;
     }
@@ -91,15 +91,15 @@ onMount(() => {
     }
     @media (min-width: 430px) {
         .Contador {
-            padding: 8rem 20%;
+            padding: 8rem 20% 10;
         }
         .text {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
     }
     @media (min-width: 768px) {
         .Contador {
-            padding: 10rem 20%;
+            padding: 10rem 20% 12;
         }
         .tag {
             width: 26rem;
@@ -107,7 +107,7 @@ onMount(() => {
             padding-bottom: 2rem;
         }
         .text {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
         }
         .card-contador{
             width: 4rem;
@@ -126,14 +126,15 @@ onMount(() => {
     }
     @media (min-width: 1024px) {
         .Contador {
-            padding: 8rem 25%;
+            padding: 8rem 25% 10;
         }
     }
 </style>
 
 
 <div class="Contador">
-    <p class="text">Los momentos pasan,
+    <p class="text">
+        Los momentos pasan,
         pero los recuerdos de este día
         quedarán grabados para siempre
         en el tiempo.</p>
