@@ -32,16 +32,22 @@
     p {
         color: var(--onyx);
         text-align: center;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         font-weight: 500;
         line-height: 1.4rem;
         padding-bottom: 0.4rem;
     }
     @media (min-width: 430px) {
         p {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
     }
+    @media (min-width: 768px) {
+        p {
+            font-size: 1.4rem;
+        }
+    }
+
 </style>
 
 

@@ -91,7 +91,7 @@ onMount(() => {
     }
     @media (min-width: 430px) {
         .Contador {
-            padding: 8rem 20% 10;
+            padding: 8rem 20% 10rem;
         }
         .text {
             font-size: 1.3rem;
@@ -99,7 +99,7 @@ onMount(() => {
     }
     @media (min-width: 768px) {
         .Contador {
-            padding: 10rem 20% 12;
+            padding: 10rem 20% 12rem;
         }
         .tag {
             width: 26rem;
@@ -126,7 +126,7 @@ onMount(() => {
     }
     @media (min-width: 1024px) {
         .Contador {
-            padding: 8rem 25% 10;
+            padding: 8rem 25% 10rem;
         }
     }
 </style>

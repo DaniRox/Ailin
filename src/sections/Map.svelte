@@ -7,7 +7,7 @@
 
 <style>
     .title {
-        height: 4.5rem;
+        height: 5rem;
         margin-bottom: -3.5rem;
         align-self: center;
     }
@@ -34,7 +34,7 @@
         font-size: 1.2rem;
         font-weight: 500;
         margin-bottom: 3rem;
-        line-height: 1.4rem;
+        line-height: 1.2rem;
         align-self: center;
     }
     .rosas {
@@ -51,7 +51,7 @@
 
     @media (min-width: 430px) {
         .title {
-            margin-bottom: 0.7rem;
+            height: 6.5rem;
         }
         .Ubicacion {
             padding: 8rem 20% 0;
@@ -64,7 +64,7 @@
     }
     @media (min-width: 768px) {
         .title {
-            margin-bottom: 0.7rem;
+            height: 7rem;
         }
         .Ubicacion {
             padding: 10rem 20% 0;
