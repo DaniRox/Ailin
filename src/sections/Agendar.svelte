@@ -57,18 +57,24 @@
         align-items: center;
         gap: 4rem;
     }
-    img {
-        height: 4.5rem;
+    .title {
+        height: 5rem;
         margin-bottom: -3.5rem;
     }
     @media (min-width: 430px) {
         .Agendar {
             padding: 8rem 20%;
         }
+        .title {
+            height: 6.5rem;
+        }
     }
     @media (min-width: 768px) {
         .Agendar {
             padding: 10rem 20%;
+        }
+        .title {
+            height: 7rem;
         }
     }
     @media (min-width: 1024px) {
@@ -91,14 +97,14 @@
     Sincronizá el evento en tu calendario y asegurá tu lugar en esta noche inolvidable.
     </Text>
 
-    <img src={imgTitle} alt="Titulo DressCode">
+    <img src={imgTitle} alt="Titulo DressCode" class="title">
     <Text 
         buttonStyleClass="button-none"
     >
-    Para esta noche tan especial, queremos verte brillar. Pedimos que asistan con vestimenta elegante.
-    <br>
-    Aviso importante: El color verde está oficialmente vetado en todas sus variantes. Ailín ya tiene todo el brillo reservado para ella, así que ¡por favor, dejen ese color en el placard!
-    <br><br>
-    ¡Esperamos verlos radiantes y listos para disfrutar!
+        Para esta noche tan especial, queremos verte brillar. Pedimos que asistan con vestimenta elegante.
+        <br>
+        Aviso importante: El color verde está oficialmente vetado en todas sus variantes. Ailín ya tiene todo el brillo reservado para ella, así que ¡por favor, dejen ese color en el placard!
+        <br><br>
+        ¡Esperamos verlos radiantes y listos para disfrutar!
     </Text>
 </div>

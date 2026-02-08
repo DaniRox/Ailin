@@ -111,13 +111,13 @@
         buttonUrl="https://forms.gle/u136ajgCFZXTq73h8"
         buttonNewTab={true} 
     >
-    ¡Con vos la fiesta es completa!
-    <br>
-    Avisanos si nos acompañás. Tu confirmación es vital para recibirte como te mereces.
-    <br>
-    ¡Estamos ansiosos por celebrar junto a vos!
-    
-</Text>
+        ¡Con vos la fiesta es completa!
+        <br>
+        Avisanos si nos acompañás. Tu confirmación es vital para recibirte como te mereces.
+        <br><br>
+        ¡Estamos ansiosos por celebrar junto a vos!
+        
+    </Text>
 
     <img src={rosas} alt="Rosas Rococo" class="rosas">
 </div>

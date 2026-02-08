@@ -84,6 +84,9 @@
         img {
             margin-bottom: 0.7rem;
         }
+        p {
+            font-size: 1.1rem;
+        }
         .Instagram {
             padding: 5rem 20%;
         }
@@ -119,11 +122,11 @@
     <Text
         buttonStyleClass="button-none"
     >
-    ¡La emoción comienza antes de la fiesta!
-    <br>
-    Seguí la cuenta oficial de los XV de Ailín y participá de encuestas, juegos y anticipos exclusivos. 
-    <br>
-    No te quedes afuera de la diversión previa.
+        ¡La emoción comienza antes de la fiesta!
+        <br>
+        Seguí la cuenta oficial de los XV de Ailín y participá de encuestas, juegos y anticipos exclusivos. 
+        <br>
+        No te quedes afuera de la diversión previa.
     </Text>
 
     <div class="tag-insta">

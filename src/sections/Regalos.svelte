@@ -173,9 +173,9 @@
         buttonStyleClass="button-none"
         buttonNewTab={false} 
     >
-    El mejor regalo es que compartas este momento con nosotros.
-    <br>
-    Sin embargo, si deseas hacerle un obsequio económico a Ailín para que ella lo disfrute a su gusto, podés hacerlo aquí de manera fácil y segura.
+        El mejor regalo es que compartas este momento con nosotros.
+        <br>
+        Sin embargo, si deseas hacerle un obsequio económico a Ailín para que ella lo disfrute a su gusto, podés hacerlo aquí de manera fácil y segura.
     </Text>
 
     <button on:click={toggleModal} class="button-secondary">Enviar regalo</button>
