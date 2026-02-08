@@ -134,7 +134,7 @@
         <p>Cómo participar:</p>
         <p>1. Seguí la cuenta y activa las notificaciones para estar al día con las novedades.</p>
         <p>2. Respondé a las historias y jugá a las encuestas para interactuar con la festejada.</p>
-        <p>3. El día del evento, compartí tus fotos y videos usando el hashtag #HashtagDelEvento.</p>
+        <p>3. El día del evento, compartí tus fotos y videos usando el hashtag #Los15deAilin</p>
     </div>
 
     <Button text={buttonText} styleClass={buttonStyleClass} url={buttonUrl} newTab={buttonNewTab}/>
