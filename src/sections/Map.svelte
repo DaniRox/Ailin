@@ -15,7 +15,7 @@
         width: 100%;
         background-color: var(--seasShell);
         box-shadow: 5px 0px 45px 0px rgb(152, 139, 121, 0.8) inset;
-        padding: 7rem 10% 0rem;
+        padding: 7rem 10% 2rem;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -45,7 +45,7 @@
         left: 0;
         position: relative;
         margin-top: -8rem;
-        bottom: -5rem;
+        bottom: -6rem;
         z-index: 20;
     }
 
@@ -54,7 +54,7 @@
             height: 6.5rem;
         }
         .Ubicacion {
-            padding: 8rem 20% 0;
+            padding: 8rem 20% 2rem;
         }
         .rosas {
             width: 50rem;
@@ -67,7 +67,7 @@
             height: 7rem;
         }
         .Ubicacion {
-            padding: 10rem 20% 0;
+            padding: 10rem 20% 2rem;
         }
         .rosas {
             width: 60rem;
@@ -77,7 +77,7 @@
     }
     @media (min-width: 1024px) {
         .Ubicacion {
-            padding: 8rem 25% 0;
+            padding: 8rem 25% 2rem;
         }
         .rosas {
             width: 65rem;
