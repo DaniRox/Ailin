@@ -8,7 +8,7 @@
 
 <style>
     .Button {
-        font-size: 0.9rem;
+        font-size: 1rem;
         padding: 0.5rem 0.7rem;
         font-weight: 500;
         border-radius: 0.15rem;
@@ -56,14 +56,18 @@
     .button-none {
         display: none;
     }
+    @media (min-width: 430px) {
+        .Button {
+            font-size: 1.1rem;
+        }
+    }
     @media (min-width: 768px) {
         .Button {
-            font-size: 0.9rem;
-            font-weight: 500;
-            border-radius: 0.3rem;
-            text-transform: uppercase;
-            transition: all 0.3s;
+            font-size: 1.2rem;
         }
+    }
+    @media (min-width: 1024px) {
+
     }
 </style>
 
