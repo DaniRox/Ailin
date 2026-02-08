@@ -135,12 +135,6 @@
             padding-left: 2rem;
             padding-bottom: 2rem;
         }
-        .text-modal {
-            font-size: 1.2rem;
-        }
-        .text {
-            font-size: 1.8rem;
-        }
         .title{
             font-size: 2rem;
         }

@@ -99,7 +99,7 @@
             height: 30rem;
         }
         .tag {
-            height: 14rem;
+            height: 11rem;
         }
         .rosa9 {
             width: 11rem;
