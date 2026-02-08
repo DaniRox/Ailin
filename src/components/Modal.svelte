@@ -27,6 +27,7 @@
         left: 0;
         width: 100%;
         height: 100%;
+        padding: 2rem 0;
         background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
         display: flex;
         justify-content: center;

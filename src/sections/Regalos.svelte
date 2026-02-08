@@ -135,8 +135,14 @@
             padding-left: 2rem;
             padding-bottom: 2rem;
         }
+        .text-modal {
+            font-size: 1rem;
+        }
         .text {
             font-size: 1.2rem;
+        }
+        .title{
+            font-size: 1.6rem;
         }
         .card-Regalos{
             width: 4rem;
@@ -182,24 +188,24 @@
 </div>
 
 <Modal 
-        isOpen={mostrarModal} 
-        close={toggleModal}
-    >
-        <h2 class="title">Datos para el Regalo</h2>
-        <br>
+    isOpen={mostrarModal} 
+    close={toggleModal}
+>
+    <h2 class="title">Datos para el Regalo</h2>
+    <br>
 
-        <p class="text-modal">Nombre: Ailin Eluney Benitez</p>
+    <p class="text-modal">Nombre: Ailin Eluney Benitez</p>
 
-        <div class="renglon">
-            <p class="text-modal">Alias: ailin.786.abuela.mp</p>
-            <button class="btn-copy" on:click={() => copiarTexto("ailin.786.abuela.mp")} title="Copiar alias">
-                <img src={imgDuplicate} alt="img">
-            </button>
-        </div>
+    <div class="renglon">
+        <p class="text-modal">Alias: ailin.786.abuela.mp</p>
+        <button class="btn-copy" on:click={() => copiarTexto("ailin.786.abuela.mp")} title="Copiar alias">
+            <img src={imgDuplicate} alt="img">
+        </button>
+    </div>
 
 
-        <br>
-        <p class="text">¡Muchas gracias!</p>
-    </Modal>
+    <br>
+    <p class="text">¡Muchas gracias!</p>
+</Modal>
 
     
