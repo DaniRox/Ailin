@@ -93,6 +93,9 @@ onMount(() => {
         .Contador {
             padding: 8rem 20%;
         }
+        .text {
+            font-size: 1.2rem;
+        }
     }
     @media (min-width: 768px) {
         .Contador {
@@ -104,7 +107,7 @@ onMount(() => {
             padding-bottom: 2rem;
         }
         .text {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
         .card-contador{
             width: 4rem;
