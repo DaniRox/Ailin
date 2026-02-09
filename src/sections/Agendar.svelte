@@ -7,7 +7,7 @@
         ubicacion: "Av. Presidente Illia 10248, Tortuguitas",
         descripcion: "¡No te pierdas esta noche memorable! Inicio: 21:00 hs.",
         // Fecha y hora de inicio: 14 de Marzo de 2026, 21:00
-        inicio: new Date("2026-03-14T21:00:00") 
+        inicio: new Date("2026-03-10T21:00:00") 
         // ELIMINADO: La propiedad 'fin' para evitar errores de agendamiento
     };
 
