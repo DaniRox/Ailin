@@ -1,46 +1,45 @@
 <script>
-	import Text from './../components/Text.svelte';
+    import Text from './../components/Text.svelte';
     import imgTitle from "../images/Dress_Code.png";
 
     const evento = {
         titulo: "Ailín XV",
         ubicacion: "Av. Presidente Illia 10248, Tortuguitas",
         descripcion: "¡No te pierdas esta noche memorable! Inicio: 21:00 hs.",
-        // Fecha y hora de inicio: 2 de Noviembre, 21:00
-        inicio: new Date("2026-03-14T21:00:00"), 
-        // Fecha y hora de fin: 3 de Noviembre, 05:00 (El día siguiente)
-        fin: new Date("2026-03-15T05:00:00")       
+        // Fecha y hora de inicio: 14 de Marzo de 2026, 21:00
+        inicio: new Date("2026-03-14T21:00:00") 
+        // ELIMINADO: La propiedad 'fin' para evitar errores de agendamiento
     };
 
-    // Formato Google: AAAAMMDDTHHMMSS (Ej: 20241102T210000)
+    // Formato Google: AAAAMMDDTHHMMSS
     const formatoGoogle = (fecha) => {
         return fecha.toISOString().replace(/[-:]/g, '').split('.')[0];
     };
 
-    // Formato Outlook: AAAA-MM-DDTHH:MM:SS (Ej: 2024-11-02T21:00:00)
+    // Formato Outlook: AAAA-MM-DDTHH:MM:SS
     const formatoOutlook = (fecha) => {
         return fecha.toISOString().slice(0, 19);
     };
 
-    // Codifica texto para que los espacios y caracteres especiales rompan el enlace
     const codificar = (texto) => encodeURIComponent(texto);
     
-	const googleCalendarUrl = `https://www.google.com/calendar/render?action=TEMPLATE&text=${codificar(evento.titulo)}&dates=${formatoGoogle(evento.inicio)}/${formatoGoogle(evento.fin)}&details=${codificar(evento.descripcion)}&location=${codificar(evento.ubicacion)}`;
-    const outlookCalendarUrl = `https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&subject=${codificar(evento.titulo)}&startdt=${formatoOutlook(evento.inicio)}&enddt=${formatoOutlook(evento.fin)}&body=${codificar(evento.descripcion)}&location=${codificar(evento.ubicacion)}`;
-    const appleCalendarUrl = "https://tu-sitio.com/evento.ics"; // Reemplaza con el enlace al archivo .ics
+    // CORRECCIÓN: Usamos 'evento.inicio' para el inicio Y para el final.
+    // Esto fuerza a que el evento se agende solo en ese día y hora específica.
+    const googleCalendarUrl = `https://www.google.com/calendar/render?action=TEMPLATE&text=${codificar(evento.titulo)}&dates=${formatoGoogle(evento.inicio)}/${formatoGoogle(evento.inicio)}&details=${codificar(evento.descripcion)}&location=${codificar(evento.ubicacion)}`;
+    
+    const outlookCalendarUrl = `https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&subject=${codificar(evento.titulo)}&startdt=${formatoOutlook(evento.inicio)}&enddt=${formatoOutlook(evento.inicio)}&body=${codificar(evento.descripcion)}&location=${codificar(evento.ubicacion)}`;
+    
+    const appleCalendarUrl = "https://tu-sitio.com/evento.ics"; 
 
-	function getCalendarUrl() {
-		if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
-			// Dispositivo iOS
-			return appleCalendarUrl;
-		} else if (navigator.userAgent.includes("Windows") || navigator.userAgent.includes("Macintosh")) {
-			// Desktop
-			return outlookCalendarUrl;
-		} else {
-			// Otros dispositivos (Android, etc.)
-			return googleCalendarUrl;
-		}
-	}
+    function getCalendarUrl() {
+        if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
+            return appleCalendarUrl;
+        } else if (navigator.userAgent.includes("Windows") || navigator.userAgent.includes("Macintosh")) {
+            return outlookCalendarUrl;
+        } else {
+            return googleCalendarUrl;
+        }
+    }
 
     const calendarUrl = getCalendarUrl();
 </script>
