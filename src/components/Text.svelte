@@ -27,7 +27,8 @@
         flex-direction: column;
         align-items: center;
         align-self: center;
-            max-width: 30rem;
+        max-width: 30rem;
+        z-index: 20;
     }
     p {
         color: var(--onyx);

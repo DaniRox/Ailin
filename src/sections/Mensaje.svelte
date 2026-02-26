@@ -1,12 +1,6 @@
 <script>
 	import Text from './../components/Text.svelte';
-    import Button from '../components/Button.svelte';
     
-    export let buttonText = "enviar mensaje";
-    export let buttonUrl = "https://forms.gle/MzKdJghFNTjvfGAm9";
-    export let buttonNewTab = true;
-    export let buttonStyleClass = "button-secondary";
-
     import rosa9 from "../images/9.png";
     import rosa10 from "../images/10.png";
 </script>
@@ -120,12 +114,13 @@
 
 <div class="Mensaje">
     <Text 
-        buttonStyleClass="button-none"
+        buttonText="enviar mensaje"
+        buttonStyleClass="button-secondary"
+        buttonUrl="https://forms.gle/pnx9GEmCDUypNskp8"
+        buttonNewTab={true} 
     >
     ¿Querés dejarle un mensaje de cariño a Ailín? Escribí tus buenos deseos; ella estará encantada de leerlos y guardarlos como recuerdo.
     </Text>
-
-    <Button text={buttonText} styleClass={buttonStyleClass} url={buttonUrl} newTab={buttonNewTab}/>
 
     <div class="rosas">
         <div class="rosasArriba">
