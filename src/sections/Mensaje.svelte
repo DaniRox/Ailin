@@ -116,7 +116,7 @@
     <Text 
         buttonText="enviar mensaje"
         buttonStyleClass="button-secondary"
-        buttonUrl="https://forms.gle/rMWpYCTNQ1eMh6cR7"
+        buttonUrl="https://forms.gle/MzKdJghFNTjvfGAm9"
         buttonNewTab={true} 
     >
     ¿Querés dejarle un mensaje de cariño a Ailín? Escribí tus buenos deseos; ella estará encantada de leerlos y guardarlos como recuerdo.
